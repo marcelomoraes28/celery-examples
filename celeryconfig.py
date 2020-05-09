@@ -22,6 +22,6 @@ task_routes = {
 beat_schedule = {
     'every-three-minute': {
         'task': 'relay_messages',
-        'schedule': crontab(minute='*/1')
+        'schedule': crontab(minute='*/3')
     },
 }
