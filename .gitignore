@@ -140,9 +140,5 @@ cython_debug/
 # Pycharm
 .idea
 
-# Transmission logs
-transmission_fails/*
-transmission_success/*
-
 # Celery stuff
 celerybeat-schedule.*
