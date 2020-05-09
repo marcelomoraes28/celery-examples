@@ -1,6 +1,6 @@
 # Celery POC examples
 
-One Paragraph of project description goes here
+This project is intended to demonstrate how to use celery and a some examples of how to prevent failover.
 
 ## Getting Started
 
@@ -27,11 +27,12 @@ pip install requirements.txt
 
 ### First Story
 
-In a Galaxy far far away the war has begun. Princess Leia must send an urgent message for everyone in your transmission list, but her system must follow a few rules
+In a Galaxy far far away the war has begun. Princess Leia must send an urgent message for everyone in your transmission list, but her system must follow a few rules:
 * The system must try to transmit the message at least 5 times, this will be safer to prevent another malicious person from capturing the message
 * If the transmission fails, then try again in every 5 seconds + the retry number, let's suppose it is the third time the system is trying to transmit the message then the delay of the new attempt will be 5 * 3 = 15 seconds
 * Since the war, many of Leia's allies have become evil then these people must not receive the transmission
 
+![alt text](starwars.jpg)
 #### Run
 
 Start celery with 4 workers for starwars queue
@@ -55,6 +56,8 @@ Nostromo spaceship has discovered a kind of S.O.S signal coming from nearby moon
 * The system must provided a schedule task that runs every 3 minutes searching the logs into transmission_fails folder to try to transmit again;
 * If the transmission was successful then save the payload into a transmission_success folder.
 * For each run of story_2_send_messages the system must create only one success log file into transmission_success and append each payload separate by \n
+![alt text](alien.jpg)
+
 #### Run
 
 Start celery with 4 workers for alien queue and beat
