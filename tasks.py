@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 ###############
 # STORY 1
-################
+###############
 # Defining the exceptions
 class BlackList(Exception):
     pass
@@ -93,11 +93,11 @@ def story_1_send_messages(self):
 
 ###############
 # END STORY 1
-################
+###############
 
 ###############
-# END STORY 2
-################
+# STORY 2
+###############
 
 
 BINARY_SEQUENCE = {0: 01010111,
@@ -277,3 +277,7 @@ def relay_messages(self):
         # When the transmit_message tasks was triggered then remove the file
         # from transmission_fails dir
         os.remove(FAILS_PATH_DIR + file)
+
+###############
+# END STORY 2
+###############
