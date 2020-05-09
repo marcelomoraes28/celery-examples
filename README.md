@@ -56,6 +56,7 @@ Nostromo spaceship has discovered a kind of S.O.S signal coming from nearby moon
 * The system must provided a schedule task that runs every 3 minutes searching the logs into transmission_fails folder to try to transmit again;
 * If the transmission was successful then save the payload into a transmission_success folder.
 * For each run of story_2_send_messages the system must create only one success log file into transmission_success and append each payload separate by \n
+
 ![alt text](alien.jpg)
 
 #### Run
