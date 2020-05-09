@@ -25,6 +25,15 @@ Installing the python dependencies
 pip install requirements.txt
 ```
 
+If you are running redis in different server/port, update the celeryconfig.py module with your configurations.
+
+### Run Flower
+
+Running a flower in a port 5555
+``` shell
+flower -A tasks --port=5555
+```
+
 ### First Story
 
 In a Galaxy far far away the war has begun. Princess Leia must send an urgent message for everyone in your transmission list, but her system must follow a few rules:
