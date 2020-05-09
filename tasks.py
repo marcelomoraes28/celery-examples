@@ -195,7 +195,7 @@ def get_files_name(path_dir):
     :param path_dir: Directory path
     :return: List of all files names
     """
-    return [f for f in listdir(path_dir) if isfile(join(path_dir, f))]
+    return [f for f in listdir(path_dir) if isfile(join(path_dir, f)) and 'transmission_' in f]  # noqa
 
 
 def read_logs(path_dir, file_name):
