@@ -22,7 +22,7 @@ source venv/bin/activate
 ```
 Installing the python dependencies
 ``` shell
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 If you are running redis in different server/port, update the celeryconfig.py module with your configurations.
