@@ -15,12 +15,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-Creating the venv and activating
+Create the venv and activating
 ``` shell
 virtualenv venv -p python2
 source venv/bin/activate
 ```
-Installing the python dependencies
+Install the python dependencies
 ``` shell
 pip install -r requirements.txt
 ```
@@ -29,7 +29,7 @@ If you are running redis in different server/port, update the celeryconfig.py mo
 
 ### Run Flower
 
-Running a flower in a port 5555
+Run the flower at port 5555
 ``` shell
 flower -A tasks --port=5555
 ```
