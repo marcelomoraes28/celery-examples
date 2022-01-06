@@ -1,7 +1,7 @@
 amqp==2.5.2
 backports-abc==0.5
 billiard==3.6.3.0
-celery==4.4.2
+celery==5.2.2
 configparser==4.0.2
 contextlib2==0.6.0.post1
 flower==0.9.4
